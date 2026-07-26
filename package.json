@@ -1,0 +1,17 @@
+{
+  "name": "e-commerce-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-Stack E-Commerce Platform (Go REST API + Next.js Frontend)",
+  "scripts": {
+    "dev:backend": "cd backend && go run ./cmd/api/main.go",
+    "dev:frontend": "cd front-end && npm run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"magenta,cyan\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "cd backend && go build ./...",
+    "build:frontend": "cd front-end && npm run build",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
