@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+front-end/node_modules/
+
+# Next.js Build Output
+.next/
+front-end/.next/
+out/
+front-end/out/
+
+# Go Executables & Environment
+*.exe
+*.exe;
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.db
+backend/ecommerce.db
+backend/api
+
+# IDE & OS Files
+.DS_Store
+*.pem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
