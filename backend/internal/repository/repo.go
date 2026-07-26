@@ -9,8 +9,8 @@ import (
 	"backend/internal/model"
 
 	"github.com/google/uuid"
+	"github.com/glebarez/sqlite"
 	"gorm.io/driver/postgres"
-	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
 
